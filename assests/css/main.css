@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Ysabeau+SC:wght@300&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.im1{
+    height: 200px ;
+    width: 200px;
+}
+    .game {
+        text-align: center;
+        margin-top: 5px;
+    }
+    .nav-bar
+    {
+        display: flex;
+        background-color: rgba(19, 1, 27, 0.858);
+        color: aliceblue;
+        max-height: 15%;
+        padding-left: 10px;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Kablammo', cursive;
+        font-size: larger;
+    }
+    .board {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+       /* grid-gap: 5px;  */
+       max-width: 100%;
+       width: 300px;
+        /* width: 300px; */
+        margin: 0 auto;
+        position: relative;
+    }   
+    .cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        font-size: 48px;
+        font-family: 'Ysabeau SC', sans-serif;
+        cursor: pointer;
+        height: 100px;
+    }   
+    button {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+.bd-t0
+{
+    border-top: 0;
+}
+.bd-b0
+{
+    border-bottom: 0;
+}
+.bd-l0
+{
+    border-left: 0;
+}
+.bd-r0
+{
+    border-right: 0;
+}
+.cell:hover{
+    background-color: rgba(0, 0, 0, 0.527);
+}
+.line{
+    background-color: black;
+    width: 3px;
+   height: 100%;
+ position: absolute; 
+ top: 0;
+ left: 0;
+ transform-origin: top;
+ display: none;
+}
+.parent_1{
+display: flex;
+gap: 10px;
+justify-content: center;
+}
